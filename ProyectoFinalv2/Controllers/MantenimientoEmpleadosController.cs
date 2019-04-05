@@ -37,7 +37,7 @@ namespace ProyectoFinalv2.Controllers
 
         public ActionResult Editar(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 
@@ -50,7 +50,8 @@ namespace ProyectoFinalv2.Controllers
             return View(mantenimientoEmpleado);
         }
         [HttpPost]
-        public ActionResult Editar([Bind(Include = "CodigoEmpleado, NombreEmpleado, ApellidoEmpleado, TelefonoEmpleado, DepartamentoEmpleado, CargoEmpleado, FechaIngresoEmpelado, SalarioEmpleado, Estatus")] MantenimientoEmpleado mantenimientoEmpleado)
+        [ValidateAntiForgeryToken]
+        public ActionResult Editar([Bind(Include = "Id,CodigoEmpleado, NombreEmpleado, ApellidoEmpleado, TelefonoEmpleado, DepartamentoEmpleado, CargoEmpleado, FechaIngresoEmpelado, SalarioEmpleado, Estatus")] MantenimientoEmpleado mantenimientoEmpleado)
         {
             if (ModelState.IsValid)
             {
@@ -60,5 +61,30 @@ namespace ProyectoFinalv2.Controllers
             }
             return View(mantenimientoEmpleado);
         }
+
+        public ActionResult Eliminar(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            MantenimientoEmpleado mantenimientoEmpleado = db.MantenimientoEmpleados.Find(id);
+            if (mantenimientoEmpleado == null)
+            {
+                return HttpNotFound();
+            }
+            return View(mantenimientoEmpleado);
+        }
+        [HttpPost, ActionName("Eliminar")]
+        [ValidateAntiForgeryToken]
+        public ActionResult EliminarConfirmada(int id)
+        {
+            MantenimientoEmpleado mantenimientoEmpleado = db.MantenimientoEmpleados.Find(id);
+            db.MantenimientoEmpleados.Remove(mantenimientoEmpleado);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }

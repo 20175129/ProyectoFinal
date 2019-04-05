@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ProyectoFinalv2.Models.MantenimientoCargo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Mantenimiento de los Cargos</h2>
+
+<p>
+    @Html.ActionLink("Crear un cargo nuevo", "Create")
+</p>
+<table class="table table-condensed">
+    <tr>
+        <th>
+            @Html.Label("Codigo del Cargo")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cargo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoCargo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cargo)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

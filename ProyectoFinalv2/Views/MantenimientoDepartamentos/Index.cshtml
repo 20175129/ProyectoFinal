@@ -4,16 +4,21 @@
     ViewBag.Title = "Index";
 }
 
+<h2>Modulo de Departamentos</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo Departamento", "Create")
+</p>
 <table class="table">
     <tr>
         <th>
-            <h4>Codigo del Departamento</h4>
+            @Html.Label("Codigo del Departamento")
         </th>
         <th>
-            <h4>Nombre del Departamento</h4>
+            @Html.Label("Nombre")
         </th>
         <th>
-            <h4>Encargado del Departamento</h4>
+            @Html.Label("Encargado")
         </th>
         <th></th>
     </tr>
@@ -28,6 +33,11 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Encargado)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+       
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id })
         </td>
     </tr>
 }

@@ -1,0 +1,39 @@
+﻿@model ProyectoFinalv2.Models.MantenimientoCargo
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Mantenimiento de los Cargos</h2>
+
+<h3>¿Estás seguro que quieres eliminar este Cargo?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <h5 class="control-label col-md-2"> Codigo del Cargo </h5>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoCargo)
+        </dd>
+
+        <dt>
+            <h5 class="control-label col-md-2">Cargo </h5>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cargo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>
