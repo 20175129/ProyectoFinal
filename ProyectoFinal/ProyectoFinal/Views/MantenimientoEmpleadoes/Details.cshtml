@@ -1,0 +1,90 @@
+﻿@model ProyectoFinal.Models.MantenimientoEmpleado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MantenimientoEmpleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApellidoEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApellidoEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartamentoEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartamentoEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CargoEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CargoEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaIngresoEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaIngresoEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalarioEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalarioEmpleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

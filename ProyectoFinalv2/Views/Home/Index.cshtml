@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Bienvenido al Sistema de Nomina</h2>
+<div>
+    <input type="button" value="Modulo de Mantenimiento" onclick="location.href='@Url.Action("Index", "MantenimientoEmpleados")'" class="btn-lg btn-default" />
+    <br />
+    <input type="button" value="Modulo de Procesos" onclick="location.href='@Url.Action("Index", "Procesos")'" class="btn-lg btn-default" />
+</div>
+

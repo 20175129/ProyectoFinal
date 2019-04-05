@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="39e971a3cae843efbe5673272fbef060" Name="Diagram1">
+        <EntityTypeShape EntityType="SistemaNominaModel.MantenimientoCargo" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaNominaModel.MantenimientoDepartamento" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaNominaModel.MantenimientoEmpleado" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaNominaModel.Nomina" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaNominaModel.SalidaEmpleado" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaNominaModel.VacacionesEmpleado" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <AssociationConnector Association="SistemaNominaModel.FK__SalidaEmp__IdEmp__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaNominaModel.FK__Vacacione__IdEmp__4316F928" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

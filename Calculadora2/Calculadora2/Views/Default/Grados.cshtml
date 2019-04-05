@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Grados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Grados</h2>
+<p><input id="c" onkeyup="grados('C')"> Grados Celcius</p>
+
+<p><input id="f" onkeyup="grados('F')"> Grados Farenheit</p>
+
+<script>
+function grados(tipo) {
+  var x;
+  if (tipo == "C") {
+    x = document.getElementById("c").value * 9 / 5 + 32;
+    document.getElementById("f").value = Math.round(x);
+  } else {
+    x = (document.getElementById("f").value -32) * 5 / 9;
+    document.getElementById("c").value = Math.round(x);
+  }
+}
+</script>
+
+

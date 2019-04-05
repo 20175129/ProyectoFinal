@@ -1,0 +1,58 @@
+﻿@model ProyectoFinal.Models.VacacionesEmpleado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VacacionesEmpleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDesde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDesde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaHasta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaHasta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CorrespondienteAño)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CorrespondienteAño)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComentarioVacacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComentarioVacacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MantenimientoEmpleado.CodigoEmpleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MantenimientoEmpleado.CodigoEmpleado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

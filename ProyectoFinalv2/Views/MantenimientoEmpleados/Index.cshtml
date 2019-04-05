@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ProyectoFinalv2.Models.MantenimientoEmpleado>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table table-bordered table-striped table-condensed">
+    
+    <tr>
+        <th>
+            <h5>Codigo</h5>
+        </th>
+        <th>
+            <h5>Nombre</h5>
+        </th>
+        <th>
+            <h5>Apellido</h5>
+        </th>
+        <th>
+            <h5>Telefono</h5>
+        </th>
+        <th>
+            <h5>Departamento</h5>
+        </th>
+        <th>
+            <h5>Cargo</h5>
+        </th>
+        <th>
+            <h5>Fecha de Ingreso</h5>
+        </th>
+        <th>
+            <h5>Salario</h5>
+        </th>
+        <th>
+            <h5>Estatus</h5>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApellidoEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefonoEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepartamentoEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CargoEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaIngresoEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SalarioEmpleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estatus)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Editar", new { id = item.Id }) |
+            @Html.ActionLink("Eliminar", "Eliminar", new { id = item.Id })
+        </td>
+    </tr>
+}
+</table>

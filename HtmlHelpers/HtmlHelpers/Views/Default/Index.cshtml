@@ -1,0 +1,52 @@
+﻿
+
+@using HtmlHelpers.Models
+@model Class1
+<div class="container" style="width:70%;margin-top:1%">
+
+
+    <br /> @Html.Label("NombreLabel", "Nombre", null)
+
+    @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control", @placeholder = "Nombre" })
+
+    <br />
+    @Html.Label("ApellidoLabel", "Apellido", null)
+    <br />
+    @Html.TextBoxFor(model => model.Apellido, new { @class = "form-control", @placeholder = "Apellido" })
+    <br />
+    @Html.Label("TelefonoLabel", "Telefono", null)
+    <br />
+    @Html.TextBoxFor(model => model.Telefono, new { @class = "form-control", @placeholder = "Telefono" })
+    <br />
+    @Html.Label("CedulaLabel", "Cedula", null)
+    <br />
+    @Html.TextBoxFor(model => model.Cedula, new { @class = "form-control", @placeholder = "Cedula" })
+    <br />
+    @Html.Label("EdadLabel", "Edad", null)
+    <br />
+    @Html.TextBoxFor(model => model.Edad, new { @class = "form-control", @placeholder = "Edad" })
+  
+    <br />
+    @Html.Label("CorreoLabel", "Correo Electronico", null)
+    <br />
+    @Html.TextBoxFor(model => model.Correo, new { @class = "form-control", @placeholder = "Correo Electronico" })
+    <br />
+    @Html.Label("GeneroLabel", "Seleccione su genero", null)
+    <br />
+    @Html.DropDownList("Class1Genero", new SelectList(Enum.GetValues(typeof(Genero))), "Selecciona tu sexualidad", new { @class = "form-control" })
+    <br />
+    <br />
+    @Html.Label("EstadoCivilLabel", "Estado Civil", null)<br />
+    Casado @Html.RadioButton("EstadoCivil", "Casado")
+    Soltero @Html.RadioButton("EstadoCivil", "Soltero")
+    Viudo @Html.RadioButton("EstadoCivil", "Viudo")
+    Union Libre @Html.RadioButton("EstadoCivil", "UnionLibre")
+    <br />
+    <br />
+    Biking: @Html.CheckBox("Hobbys", false)
+    Gimnasio: @Html.CheckBox("Hobbys", false)
+    Gaming: @Html.CheckBox("Hobbys", false)
+    Correr: @Html.CheckBox("Hobbys", false)
+
+    <input type="submit" value="Enviar" class="btn btn-block btn-primary"/>
+</div>

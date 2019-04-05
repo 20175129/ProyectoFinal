@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Calculadora";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Calculadora</h2>
+
+<body>
+    <div>
+
+        <form name="calcul">
+
+            <input type="text" name="respuest" />
+            <br>
+
+            <input type="button" value=" 1 " onclick="calcul.respuest.value += '1'" />
+            <input type="button" value=" 2 " onclick="calcul.respuest.value += '2'" />
+            <input type="button" value=" 3 " onclick="calcul.respuest.value += '3'" />
+            <input type="button" value=" + " onclick="calcul.respuest.value += '+'" />
+            <br/>
+
+            <input type="button" value=" 4 " onclick="calcul.respuest.value += '4'" />
+            <input type="button" value=" 5 " onclick="calcul.respuest.value += '5'" />
+            <input type="button" value=" 6 " onclick="calcul.respuest.value += '6'" />
+            <input type="button" value=" - " onclick="calcul.respuest.value += '-'" />
+            <br/>
+
+            <input type="button" value=" 7 " onclick="calcul.respuest.value += '7'" />
+            <input type="button" value=" 8 " onclick="calcul.respuest.value += '8'" />
+            <input type="button" value=" 9 " onclick="calcul.respuest.value += '9'" />
+            <input type="button" value=" x " onclick="calcul.respuest.value += '*'" />
+            <br/>
+
+            <input type="button" value=" c " onclick="calcul.respuest.value = ''" />
+            <input type="button" value=" 0 " onclick="calcul.respuest.value += '0'" />
+            <input type="button" value=" = " onclick="calcul.respuest.value = eval(calcul.respuest.value)" />
+            <input type="button" value=" / " onclick="calcul.respuest.value += '/'" />
+            <br/>
+
+
+        </form>
+        </div>
+</body>

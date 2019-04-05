@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Calcu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Calcu</h2>
+@using (Html.BeginForm())
+{<fieldset> <legend style ="color:blue"> Operation Of Two Numbers </legend>
+
+    @Html.EditorFor(x => x) <br/> <br/> @Html.EditorFor(x => x) <br/> <br/> 
+    <input type = "submit"
+    value = "Sumar"
+    name = "operacion"/> <input type = "submit"
+    value = "Restar"
+    name = "operacion"/> <input type = "submit"
+    value = "Multiplicar"
+    name = "operacion"/> <input type = "submit"
+    value = "Dividir"
+    name = "operacion"/> <br/> <br/> <h2 style = "color:red"> 
+    @Html.Label("Result is :")
+    @Html.DisplayFor(x => x) </h2> </fieldset>
+    }
+

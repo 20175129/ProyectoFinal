@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Excel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Excel</h2>
+@using System.Data
+@model DataSet
+<style>
+
+    table {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        table td, table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+</style>
+<div style="width: auto; border: solid 2px #000; padding: 12px; margin: 20px; text-align: center">
+    <form method="post" enctype="multipart/form-data" asp-action="Excel">
+        <input type="file" style="padding-bottom: 40px" id="fUpload" name="archivo" class="form-control" /><br /><br />
+        <input type="submit" class="boton_magico boton_magico_negro" id="btnUpload" value="Upload" /> <br /><br />
+        <br />
+        <div id="dvData">
+            @if (Model != null)
+            {
+                < tbody >
+                        @foreach(DataRow row in Model.Tables[0].Rows)
+                        {
+                            < tr >
+                                @foreach(DataColumn col in Model.Tables[0].Columns)
+                                {
+                                    < td >
+                                        @row[col]
+                                    </ td >
+                                }
+                            </ tr >
+                        }
+                    </ tbody >
+            }
+        </div>
+    </form>
+</div>
+
+

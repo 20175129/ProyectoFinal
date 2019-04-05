@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ProyectoFinalv2.Models.MantenimientoDepartamento>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table">
+    <tr>
+        <th>
+            <h4>Codigo del Departamento</h4>
+        </th>
+        <th>
+            <h4>Nombre del Departamento</h4>
+        </th>
+        <th>
+            <h4>Encargado del Departamento</h4>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoDepartamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Encargado)
+        </td>
+    </tr>
+}
+
+</table>
