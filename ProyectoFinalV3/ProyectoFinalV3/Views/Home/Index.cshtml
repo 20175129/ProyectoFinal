@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Sistema de Nomina</h2>
+
+<h2>Bienvenido al Sistema de Nomina</h2>
+<div>
+    <input type="button" value="Empleados" onclick="location.href='@Url.Action("Index", "Empleados")'" class="btn-lg btn-default" />
+    <br />
+    <input type="button" value="Nomina" onclick="location.href='@Url.Action("Index", "Nomina")'" class="btn-lg btn-default" />
+
+    <input type="button" value="Departamentos" onclick="location.href='@Url.Action("Index","Departamentos")'" class="btn-lg btn-default" />
+
+    <input type="button" value="Licencias" onclick="location.href='@Url.Action("Index","Licencias")'" class="btn-lg btn-default" />
+
+    <input type="button" value="Cargos" onclick="location.href='@Url.Action("Index","Cargos")'" class="btn-lg btn-default" />
+
+    <input type="button" value="Salidas" onclick="location.href='@Url.Action("Index","Salida")'" class="btn-lg btn-default" />
+
+    <input type="button" value="Vacaciones" onclick="location.href='@Url.Action("Index","Vacacione")'" class="btn-lg btn-default" />
+
+    <input type="button" value="Calcular test" onclick="location.href='@Url.Action("Index", "Home")'" class="btn-lg btn-default" />
+</div>

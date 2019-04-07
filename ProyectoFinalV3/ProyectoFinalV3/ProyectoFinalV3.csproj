@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{36DF478A-D134-414C-89A7-C784BAC3311B}</ProjectGuid>
+    <ProjectGuid>{E2AD2DD2-675B-40D2-8CE8-D9A525506927}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProyectoFinalv2</RootNamespace>
-    <AssemblyName>ProyectoFinalv2</AssemblyName>
+    <RootNamespace>ProyectoFinalV3</RootNamespace>
+    <AssemblyName>ProyectoFinalV3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -43,62 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Carbon.Data.Protection, Version=0.20.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.Data.Protection.0.20.0\lib\netstandard2.0\Carbon.Data.Protection.dll</HintPath>
-    </Reference>
-    <Reference Include="Carbon.Json, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.Json.1.9.0\lib\netstandard2.0\Carbon.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Carbon.Packaging, Version=1.29.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.Packaging.1.29.1\lib\netstandard2.0\Carbon.Packaging.dll</HintPath>
-    </Reference>
-    <Reference Include="Carbon.Storage, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.Storage.1.17.0\lib\netstandard2.0\Carbon.Storage.dll</HintPath>
-    </Reference>
-    <Reference Include="Carbon.VersionControl, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.VersionControl.1.9.0\lib\netstandard2.0\Carbon.VersionControl.dll</HintPath>
-    </Reference>
-    <Reference Include="Carbon.Versioning, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.Versioning.1.5.0\lib\netstandard2.0\Carbon.Versioning.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="GitHub, Version=1.13.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\GitHub.1.13.2\lib\netstandard2.0\GitHub.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard2.0\System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Text.Encodings.Web, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -108,12 +61,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -154,15 +101,15 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\NominaDb.Context.tt">
+    <Content Include="Models\NominaDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>NominaDb.Context.cs</LastGenOutput>
-      <DependentUpon>NominaDb.edmx</DependentUpon>
+      <LastGenOutput>NominaDB.Context.cs</LastGenOutput>
+      <DependentUpon>NominaDB.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\NominaDb.tt">
+    <Content Include="Models\NominaDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NominaDb.edmx</DependentUpon>
-      <LastGenOutput>NominaDb.cs</LastGenOutput>
+      <DependentUpon>NominaDB.edmx</DependentUpon>
+      <LastGenOutput>NominaDB.cs</LastGenOutput>
     </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -179,85 +126,116 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\MantenimientoEmpleados\Index.cshtml" />
-    <Content Include="Views\MantenimientoEmpleados\Create.cshtml" />
-    <Content Include="Views\MantenimientoEmpleados\Editar.cshtml" />
-    <Content Include="Views\MantenimientoEmpleados\Eliminar.cshtml" />
-    <Content Include="Views\MantenimientoCargos\Create.cshtml" />
-    <Content Include="Views\MantenimientoCargos\Delete.cshtml" />
-    <Content Include="Views\MantenimientoCargos\Edit.cshtml" />
-    <Content Include="Views\MantenimientoCargos\Index.cshtml" />
-    <Content Include="Views\MantenimientoDepartamentos\Create.cshtml" />
-    <Content Include="Views\MantenimientoDepartamentos\Delete.cshtml" />
-    <Content Include="Views\MantenimientoDepartamentos\Details.cshtml" />
-    <Content Include="Views\MantenimientoDepartamentos\Edit.cshtml" />
-    <Content Include="Views\MantenimientoDepartamentos\Index.cshtml" />
+    <Content Include="Views\Cargos\Create.cshtml" />
+    <Content Include="Views\Cargos\Delete.cshtml" />
+    <Content Include="Views\Cargos\Details.cshtml" />
+    <Content Include="Views\Cargos\Edit.cshtml" />
+    <Content Include="Views\Cargos\Index.cshtml" />
+    <Content Include="Views\Departamentos\Create.cshtml" />
+    <Content Include="Views\Departamentos\Delete.cshtml" />
+    <Content Include="Views\Departamentos\Details.cshtml" />
+    <Content Include="Views\Departamentos\Edit.cshtml" />
+    <Content Include="Views\Departamentos\Index.cshtml" />
+    <Content Include="Views\Nomina\Create.cshtml" />
+    <Content Include="Views\Nomina\Delete.cshtml" />
+    <Content Include="Views\Nomina\Details.cshtml" />
+    <Content Include="Views\Nomina\Edit.cshtml" />
+    <Content Include="Views\Nomina\Index.cshtml" />
+    <Content Include="Views\Licencias\Create.cshtml" />
+    <Content Include="Views\Licencias\Delete.cshtml" />
+    <Content Include="Views\Licencias\Details.cshtml" />
+    <Content Include="Views\Licencias\Edit.cshtml" />
+    <Content Include="Views\Licencias\Index.cshtml" />
+    <Content Include="Views\Permiso\Create.cshtml" />
+    <Content Include="Views\Permiso\Delete.cshtml" />
+    <Content Include="Views\Permiso\Details.cshtml" />
+    <Content Include="Views\Permiso\Edit.cshtml" />
+    <Content Include="Views\Permiso\Index.cshtml" />
+    <Content Include="Views\Salida\Create.cshtml" />
+    <Content Include="Views\Salida\Delete.cshtml" />
+    <Content Include="Views\Salida\Details.cshtml" />
+    <Content Include="Views\Salida\Edit.cshtml" />
+    <Content Include="Views\Salida\Index.cshtml" />
+    <Content Include="Views\Vacacione\Create.cshtml" />
+    <Content Include="Views\Vacacione\Delete.cshtml" />
+    <Content Include="Views\Vacacione\Details.cshtml" />
+    <Content Include="Views\Vacacione\Edit.cshtml" />
+    <Content Include="Views\Vacacione\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CargosController.cs" />
+    <Compile Include="Controllers\DepartamentosController.cs" />
+    <Compile Include="Controllers\EmpleadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MantenimientoCargosController.cs" />
-    <Compile Include="Controllers\MantenimientoDepartamentosController.cs" />
-    <Compile Include="Controllers\MantenimientoEmpleadosController.cs" />
-    <Compile Include="Controllers\NominasController.cs" />
+    <Compile Include="Controllers\LicenciasController.cs" />
+    <Compile Include="Controllers\NominaController.cs" />
+    <Compile Include="Controllers\PermisoController.cs" />
+    <Compile Include="Controllers\SalidaController.cs" />
+    <Compile Include="Controllers\VacacioneController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\MantenimientoCargo.cs">
-      <DependentUpon>NominaDb.tt</DependentUpon>
+    <Compile Include="Models\Cargo.cs">
+      <DependentUpon>NominaDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\MantenimientoDepartamento.cs">
-      <DependentUpon>NominaDb.tt</DependentUpon>
+    <Compile Include="Models\Departamento.cs">
+      <DependentUpon>NominaDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\MantenimientoEmpleado.cs">
-      <DependentUpon>NominaDb.tt</DependentUpon>
+    <Compile Include="Models\Empleado.cs">
+      <DependentUpon>NominaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Licencia.cs">
+      <DependentUpon>NominaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Nomina.cs">
-      <DependentUpon>NominaDb.tt</DependentUpon>
+      <DependentUpon>NominaDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\NominaDb.Context.cs">
+    <Compile Include="Models\NominaDB.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NominaDb.Context.tt</DependentUpon>
+      <DependentUpon>NominaDB.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\NominaDb.cs">
+    <Compile Include="Models\NominaDB.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NominaDb.tt</DependentUpon>
+      <DependentUpon>NominaDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\NominaDb.Designer.cs">
+    <Compile Include="Models\NominaDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>NominaDb.edmx</DependentUpon>
+      <DependentUpon>NominaDB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\SalidaEmpleado.cs">
-      <DependentUpon>NominaDb.tt</DependentUpon>
+    <Compile Include="Models\Permiso.cs">
+      <DependentUpon>NominaDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\VacacionesEmpleado.cs">
-      <DependentUpon>NominaDb.tt</DependentUpon>
+    <Compile Include="Models\Salida.cs">
+      <DependentUpon>NominaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Vacacione.cs">
+      <DependentUpon>NominaDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Models\NominaDb.edmx">
+    <EntityDeploy Include="Models\NominaDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NominaDb.Designer.cs</LastGenOutput>
+      <LastGenOutput>NominaDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\NominaDb.edmx.diagram">
-      <DependentUpon>NominaDb.edmx</DependentUpon>
+    <Content Include="Models\NominaDB.edmx.diagram">
+      <DependentUpon>NominaDB.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Empleados\Create.cshtml" />
+    <Content Include="Views\Empleados\Delete.cshtml" />
+    <Content Include="Views\Empleados\Details.cshtml" />
+    <Content Include="Views\Empleados\Edit.cshtml" />
+    <Content Include="Views\Empleados\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Nominas\Create.cshtml" />
-    <Content Include="Views\Nominas\Delete.cshtml" />
-    <Content Include="Views\Nominas\Details.cshtml" />
-    <Content Include="Views\Nominas\Edit.cshtml" />
-    <Content Include="Views\Nominas\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -267,7 +245,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Procesos\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -285,9 +262,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51385</DevelopmentServerPort>
+          <DevelopmentServerPort>58088</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51385/</IISUrl>
+          <IISUrl>http://localhost:58088/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

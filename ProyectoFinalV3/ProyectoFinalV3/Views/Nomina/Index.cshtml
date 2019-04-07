@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ProyectoFinalV3.Models.Nomina>
+
+@{
+    ViewBag.Title = "Nominas";
+}
+
+<h2>Nominas</h2>
+@using (Html.BeginForm("Index", "Nomina", FormMethod.Get))
+{
+    @Html.TextBox("buscador") <input type="submit" value="Buscar" />
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Año)
+        </th>
+        <th>
+            @Html.Label("Mes")
+        </th>
+        <th>
+            @Html.Label("Monto total")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Año)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MES)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Monto_Total)
+            </td>
+            <td>
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>

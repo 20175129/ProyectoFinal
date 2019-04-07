@@ -57,6 +57,7 @@
             <h5 class="control-label col-md-2">Cargo</h5>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.CargoEmpleado, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.DropDownList("Cargos", new SelectList(ViewBag.data, "Empleados", "Cargos"))
                 @Html.ValidationMessageFor(model => model.CargoEmpleado, "", new { @class = "text-danger" })
             </div>
         </div>

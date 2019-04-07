@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ProyectoFinalV3.Models.Vacacione>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Vacaciones</h2>
+
+<p>
+    @Html.ActionLink("Crear Vacaciones", "Create")
+</p>
+@using (Html.BeginForm("Index", "Vacacione", FormMethod.Get))
+{
+    @Html.TextBox("busqueda") <input type="submit" value="Buscar" />
+    @Html.RadioButton("opcion", "Año") @Html.Label("Año")
+    @Html.RadioButton("opcion", "Mes") @Html.Label("Mes")
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Desde)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hasta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Correspondiente_A)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleado1.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Desde)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hasta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correspondiente_A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comentarios)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empleado1.Nombre)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Vacaciones_ID }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.Vacaciones_ID })
+            </td>
+        </tr>
+    }
+
+</table>

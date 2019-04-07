@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ProyectoFinalV3.Models.Salida>
+
+@{
+    ViewBag.Title = "Salidas";
+}
+
+<h2>Salidas de los Empleados</h2>
+
+<p>
+    @Html.ActionLink("Crear Salida", "Create")
+</p>
+
+@using (Html.BeginForm("Index", "Salida", FormMethod.Get))
+{
+    @Html.TextBox("busqueda") <input type="submit" value="Buscar" />
+    @Html.RadioButton("opcion", "Mes") @Html.Label("Mes")
+    @Html.RadioButton("opcion", "Año") @Html.Label("Año")
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo_Salida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Motivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Salida)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleado1.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipo_Salida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Motivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha_Salida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Empleado1.Nombre)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Salida_ID }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.Salida_ID })
+            </td>
+        </tr>
+    }
+
+</table>

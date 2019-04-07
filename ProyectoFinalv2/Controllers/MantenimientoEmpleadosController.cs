@@ -23,6 +23,20 @@ namespace ProyectoFinalv2.Controllers
             return View();
         }
 
+        public ActionResult Empleados()
+        {
+            var items = db.MantenimientoCargos.ToList();
+            if (items != null)
+            {
+
+                ViewBag.data = items;
+            }
+            return View();
+
+
+
+        }
+
         [HttpPost]
         public ActionResult Create([Bind(Include = "CodigoEmpleado, NombreEmpleado, ApellidoEmpleado, TelefonoEmpleado, DepartamentoEmpleado, CargoEmpleado, FechaIngresoEmpleado, SalarioEmpleado, Estatus")] MantenimientoEmpleado mantenimientoEmpleado)
         {

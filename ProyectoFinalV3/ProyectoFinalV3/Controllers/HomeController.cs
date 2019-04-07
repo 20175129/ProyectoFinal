@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using ProyectoFinalv2.Models;
-namespace ProyectoFinalv2.Controllers
+using ProyectoFinalV3.Models;
+
+namespace ProyectoFinalV3.Controllers
 {
     public class HomeController : Controller
     {
@@ -12,9 +13,8 @@ namespace ProyectoFinalv2.Controllers
         // GET: Home
         public ActionResult Index()
         {
+           
             return View();
         }
-
-       
     }
 }
